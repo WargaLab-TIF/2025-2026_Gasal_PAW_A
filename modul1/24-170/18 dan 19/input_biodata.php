@@ -31,7 +31,7 @@ $kelas=$_GET["kelas"]?? "";
             <td><?=$kelas?></td>
         </tr>
     </table>
-    <form action="tugas19.php" method="get">
+    <form action="input_biodata.php" method="get">
         <p>Nama Lengkap:</p>
         <input type="text" name="nama" placeholder="masukkan nama anda!">
         <p>NIM:</p>
@@ -43,4 +43,5 @@ $kelas=$_GET["kelas"]?? "";
         <input type="submit" value="kirim">
     </form>
 </body>
+
 </html>
