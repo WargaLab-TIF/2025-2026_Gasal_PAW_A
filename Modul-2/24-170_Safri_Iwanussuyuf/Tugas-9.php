@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="soal9.php" method="post">
+    <form action="Tugas-9.php" method="post">
         <p>Masukkan Nilai Anda</p>
         <input type="number" name="nilai">
         <input type="submit" value="kirim">
@@ -33,4 +33,5 @@ else if ($nilai>=50) {
 }
 ?>
 </body>
+
 </html>
