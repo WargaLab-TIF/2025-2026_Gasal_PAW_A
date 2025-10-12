@@ -12,3 +12,12 @@ array_push($students,
   ["Alifian", "220407", "0812345665"],
   ["Uqi", "220408", "0812345665"]
 );
+
+for ($row = 0; $row < 8; $row++) {
+  echo "<p><b>Row number $row</b></p>";
+  echo "<ul>";
+  for ($col = 0; $col < 3; $col++) {
+    echo "<li>" . $students[$row][$col] . "</li>";
+  }
+  echo "</ul>";
+}
