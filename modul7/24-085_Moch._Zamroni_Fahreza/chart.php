@@ -96,7 +96,7 @@ if(isset($_POST['tampilkan'])){
         foreach($data as $k => $v){ ?>
     <tr>
       <td><?= $no++; ?></td>
-      <td><?= $v['total_harga']; ?></td>
+      <td><?= number_format($v['total_harga']); ?></td>
       <td><?= $v['tanggal']; ?></td>
     </tr>
     <?php } ?>
