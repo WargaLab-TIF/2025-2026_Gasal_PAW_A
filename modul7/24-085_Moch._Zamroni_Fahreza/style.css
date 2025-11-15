@@ -1,0 +1,123 @@
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 25px;
+  background: #eef2f6;
+  color: #2d2d2d;
+}
+
+h2 {
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #1a2a3a;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 25px;
+  font-size: 14px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+table th {
+  background: #3a7bd5;
+  color: white;
+  padding: 12px;
+}
+
+table td {
+  padding: 10px;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+table tr:nth-child(even) {
+  background: #f7f9fc;
+}
+
+button {
+  padding: 10px 18px;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  background-color: #3a7bd5;
+}
+
+canvas {
+  width: 100% !important;
+  max-width: 900px;
+  margin: 30px auto;
+  display: block;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.total-box {
+  width: 320px;
+  background: #ffffff;
+  padding: 18px;
+  border-radius: 10px;
+  margin-top: 25px;
+  border: 1px solid #d9e4f2;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.total-box h3 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+  color: #1a2a3a;
+}
+
+.total-box p {
+  margin-top: 8px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #2d2d2d;
+}
+
+/* form */
+form {
+  background: #ffffff;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  width: fit-content;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+form input[type="date"] {
+  padding: 10px 12px;
+  border: 1px solid #cdd6e3;
+  border-radius: 6px;
+  font-size: 14px;
+  background: #f9fbfd;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+form input[type="date"]:focus {
+  border-color: #3a7bd5;
+  box-shadow: 0 0 4px rgba(58, 123, 213, 0.4);
+}
