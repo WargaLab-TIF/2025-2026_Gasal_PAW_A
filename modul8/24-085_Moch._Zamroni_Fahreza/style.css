@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+}
+
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-card {
+  background-color: white;
+  padding: 30px 40px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.login-card h2 {
+  color: #2980b9;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  font-size: 14px;
+  color: #555;
+}
+
+.form-group input:focus {
+  border-color: #3498db;
+}
+
+.btn-login {
+  width: 100%;
+  padding: 12px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 10px;
+}
+
+.btn-login:hover {
+  background-color: #2980b9;
+}
+
+header {
+  background-color: #004085;
+  color: white;
+  padding: 0 20px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header .left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+header .left .brand {
+  font-weight: bold;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+header .left .brand::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+header .left p,
+header .right p {
+  margin: 0;
+  font-size: 14px;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+header .left p:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+header .right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+}
+
+.logout-btn {
+  margin: 20px;
+  padding: 10px 20px;
+  background-color: #c0392b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
