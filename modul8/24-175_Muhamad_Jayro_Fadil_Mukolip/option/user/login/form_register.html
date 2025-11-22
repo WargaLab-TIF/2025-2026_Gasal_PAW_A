@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register User</title>
+    <!-- Font Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* --- CSS START --- */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            color: #374151;
+        }
+
+        form {
+            background-color: white;
+            padding: 32px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            width: 100%;
+            max-width: 400px; /* Lebar maksimal form */
+            border: 1px solid #e5e7eb;
+        }
+
+        h2 {
+            margin-top: 0;
+            margin-bottom: 24px;
+            color: #111827;
+            font-size: 24px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #4b5563;
+        }
+
+        /* Styling untuk semua input text, password, number, select, dan textarea */
+        input[type="text"],
+        input[type="password"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px 12px;
+            margin-bottom: 20px; /* Jarak antar elemen */
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            font-size: 14px;
+            font-family: inherit; /* Mengikuti font Inter */
+            box-sizing: border-box; /* Agar padding tidak menambah lebar elemen */
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+
+        /* Efek saat input diklik/aktif */
+        input:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+
+        textarea {
+            resize: vertical; /* User bisa ubah tinggi textarea, tapi tidak lebarnya */
+            min-height: 80px;
+        }
+
+        /* Tombol Register */
+        input[type="submit"] {
+            width: 100%;
+            background-color: #3b82f6; /* Warna Biru Utama */
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            margin-top: 10px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2563eb; /* Biru lebih gelap saat hover */
+        }
+
+        /* --- CSS END --- */
+    </style>
+</head>
+<body>
+
+    <form action="val_user.php" method="post">
+        <h2>Register</h2>
+
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required placeholder="Masukkan username">
+
+        <label for="nama">Nama Lengkap</label>
+        <input type="text" id="nama" name="nama" required placeholder="Masukkan nama lengkap">
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required placeholder="Masukkan password">
+
+        <label for="Hp">No Hp</label>
+        <input type="number" id="Hp" name="Hp" placeholder="Contoh: 08123456789">
+
+        <label for="role">Role / Jabatan</label>
+        <select name="role" id="role">
+            <option value="kasir">Kasir</option>
+            <option value="manager">Manager</option>
+            <option value="gudang">Gudang</option>
+            <option value="user">User</option>
+        </select>
+
+        <label for="alamat">Alamat</label>
+        <textarea name="alamat" id="alamat" placeholder="Masukkan alamat lengkap"></textarea>
+
+        <input type="submit" value="Register">
+    </form>
+
+</body>
+</html>
