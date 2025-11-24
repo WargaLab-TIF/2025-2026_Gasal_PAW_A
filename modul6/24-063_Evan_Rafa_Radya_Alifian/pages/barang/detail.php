@@ -6,7 +6,7 @@ $no_nota = $_GET["no_nota"];
 
 $sql_select_all_supplier = "
   SELECT * FROM nota_detail AS nd
-  JOIN nota AS n ON (nd.id_nota = n.id)
+  JOIN  AnotaS n ON (nd.id_nota = n.id)
   JOIN barang AS b ON (nd.id_barang = b.id)
   WHERE n.no_nota = '$no_nota';
 ";
