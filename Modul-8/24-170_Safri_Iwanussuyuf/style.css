@@ -1,0 +1,70 @@
+h1{
+    color:#4f98f7;
+}
+
+.tambah{
+    float: right;
+    background-color: #48a81b;
+    color:white;
+    border-radius: 4px;
+    padding:5px 5px;
+    border-color: #48a81b;
+    margin-bottom: 20px;
+}
+
+.edit{
+    background-color: #db720f;
+    color:white;
+    border-radius: 4px;
+    padding:10px 10px;
+    border-color: #db720f;
+    margin-bottom: 20px;
+}
+.hapus{
+    background-color: #ad1010;
+    color:white;
+    border-radius: 4px;
+    padding:10px 7px;
+    border-color: #ad1010;
+    margin-bottom: 20px;
+}
+
+.simpan{
+    background-color: #64d62f;
+    color:white;
+    border-radius: 4px;
+    padding:7px 7px;
+    border-color: #64d62f;
+    margin-bottom: 20px;
+}
+
+.batal{
+    background-color: #ad1010;
+    color:white;
+    border-radius: 4px;
+    padding:7px 7px;
+    border-color: #ad1010;
+    margin-bottom: 20px;
+}
+table{
+    align-items: center;
+    border: 1px,solid, black ;
+    border-collapse: collapse;
+    width: 100%;
+    
+}
+
+th,td{
+    align-items: center;
+    border: 1px,solid, black ;
+    padding: 15px;
+}
+th{
+    background-color: #abf0ff;
+}
+
+form{
+    margin:0 auto;
+    width: 250px;
+}
+
