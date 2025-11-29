@@ -1,0 +1,112 @@
+body { 
+    font-family: sans-serif; 
+    margin: 20px; 
+}
+
+.container { 
+    max-width: 900px; 
+    margin: auto; 
+    border: 1px solid #eee; 
+    padding: 20px; 
+    border-radius: 8px; 
+}
+
+h2 { 
+    color: #333; 
+    text-align: center;
+}
+
+/* Gaya untuk Filter Form di Index */
+.filter-box { 
+    border: 1px solid #ccc; 
+    padding: 20px; 
+    border-radius: 8px; 
+    margin-bottom: 30px; 
+}
+
+.filter-form { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 10px; 
+    align-items: flex-end; 
+    justify-content: center;
+}
+
+.filter-form div { 
+    flex: 1; 
+    min-width: 150px; 
+}
+
+.filter-form input[type="date"] { 
+    width: 100%; 
+    padding: 8px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+}
+
+/* Gaya Tombol */
+.btn, button { 
+    padding: 10px 15px; 
+    text-decoration: none; 
+    border-radius: 4px; 
+    color: white; 
+    border: none; 
+    cursor: pointer; 
+    display: inline-block;
+    font-size: 14px;
+}
+
+.filter-form button { background-color: #5cb85c; }
+.btn-back { background-color: #0275d8; }
+.btn-print { background-color: #f0ad4e; }
+.btn-excel { background-color: #5cb85c; }
+
+/* Gaya Tabel */
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-top: 20px; 
+}
+
+th, td { 
+    border: 1px solid #ddd; 
+    padding: 8px; 
+    text-align: left; 
+}
+
+thead { background-color: #f2f2f2; }
+tbody tr:nth-child(even) { background-color: #f9f9f9; }
+
+/* Gaya Laporan Ringkasan */
+.header-actions { 
+    display: flex; 
+    gap: 10px; 
+    margin-bottom: 20px; 
+}
+
+.total-summary { 
+    margin-top: 20px; 
+    display: flex; 
+    gap: 20px; 
+}
+
+.total-summary div { 
+    border: 1px solid #ddd; 
+    padding: 15px; 
+    border-radius: 5px; 
+    background-color: #f9f9f9; 
+    text-align: center; 
+    flex-grow: 1;
+}
+
+.chart-container {
+    position: relative; 
+    height: 40vh; 
+    width: 100%;
+}
+
+@media print {
+    body { margin: 0; }
+    .header-actions, .btn, .filter-box { display: none !important; }
+    .container { border: none; box-shadow: none; width: 100%; max-width: 100%; padding: 0; }
+}
