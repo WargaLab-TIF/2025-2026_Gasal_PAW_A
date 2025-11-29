@@ -1,0 +1,109 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+h2 {
+  color: #2c6da4;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%; /* Mengatur lebar tabel agar terlihat penuh */
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #d9edf7;
+  color: #000000;
+  font-weight: bold;
+}
+
+tr:hover {
+  background-color: #e8f4fa;
+}
+
+.btn {
+  padding: 6px 12px;
+  border-radius: 4px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  margin: 2px;
+  font-size: 14px;
+}
+
+.btn-tambah {
+  background-color: #3b9a3b;
+  padding: 8px 15px;
+}
+
+.btn-edit {
+  background-color: #cf6814;
+}
+
+.btn-hapus {
+  background-color: #cf2b25;
+}
+
+.btn-simpan,
+.btn-update {
+  background-color: #3b9a3b;
+  border: none;
+}
+
+.btn-batal {
+  background-color: #cf2b25;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+}
+
+.btn-tambah:hover { background-color: #236c23; }
+.btn-edit:hover   { background-color: #a8530e; }
+.btn-hapus:hover  { background-color: #71110e; }
+.btn-simpan:hover,
+.btn-update:hover { background-color: #236c23; }
+.btn-batal:hover  { background-color: #71110e; }
+
+form {
+  width: 400px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  color: #333;
+}
+
+input[type=text] {
+  width: 95%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+td.aksi {
+  white-space: nowrap;
+}
