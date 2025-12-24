@@ -39,7 +39,7 @@ $notas = mysqli_query($conn, $sql_select_all_supplier);
     </div>
     <div class="col-sm-6 text-end">
       <a href="./add.php" class="btn btn-success">Tambah Barang</a>
-    </div>
+    </div>  
   </div>
   <div class="row">
     <div class="col">
