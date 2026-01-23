@@ -1,0 +1,82 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 0px;
+}
+
+h2 {
+    color: #1a237e;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Semua link konten halaman, tidak mengganggu navbar */
+.content a {
+    text-decoration: none;
+    font-size: 14px;
+    padding: 6px 10px;
+    border-radius: 5px;
+}
+
+.content .tambah-btn {
+    background-color: #1a237e;
+    color: #fff;
+    margin-bottom: 15px;
+    display: flex;
+    float: right;
+}
+
+
+/* Tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.07);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+th {
+    background-color: #1a237e;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Tombol aksi */
+td a {
+    padding: 4px 8px;
+    margin: 0 3px;
+    font-size: 13px;
+    border-radius: 4px;
+}
+
+td a.edit {
+    background-color: #ffc107;
+    color: #000;
+}
+
+td a.hapus {
+    background-color: #e53935;
+    color: #fff;
+}
+
+td a.hapus:hover {
+    background-color: #b71c1c;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    table {
+        font-size: 12px;
+    }
+}

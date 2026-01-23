@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 0px;
+}
+
+.container {
+    max-width: 520px;
+    background: #ffffff;
+    padding: 20px;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.07);
+}
+
+h2 {
+    text-align: center;
+    color: #1a237e;
+    margin-bottom: 15px;
+}
+
+.form-table {
+    width: 100%;
+    border-spacing: 10px 12px;
+}
+
+.form-table td {
+    padding: 4px 0;
+}
+
+.form-table td:first-child {
+    width: 40%;
+    font-weight: bold;
+    color: #1a237e;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #b8b8b8;
+    border-radius: 6px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #1a237e;
+    box-shadow: 0 0 3px rgba(26,35,126,0.4);
+}
+
+/* Tombol Simpan */
+.btn-submit {
+    background-color: #1a237e;
+    color: #ffffff;
+    border: none;
+    padding: 10px 18px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #0d164f;
+}
+
+/* Tombol Kembali */
+.btn-back {
+    display: inline-block;
+    margin-top: 18px;
+    text-decoration: none;
+    background-color: #777;
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 6px;
+}
+
+.btn-back:hover {
+    background-color: #555;
+}
+
+/* Mobile Responsive */
+@media (max-width: 500px) {
+    .form-table td:first-child {
+        width: 100%;
+        display: block;
+        margin-bottom: 4px;
+    }
+
+    .form-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .btn-submit {
+        width: 100%;
+    }
+}
