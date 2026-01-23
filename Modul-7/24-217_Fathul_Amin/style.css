@@ -1,0 +1,103 @@
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f6f2ed;       
+    margin: 0;
+    padding: 20px;
+    color: #000000;             
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #5a4636;           
+}
+
+h3 {
+    color: #6b4f3f;          
+    padding-bottom: 6px;
+    border-bottom: 2px solid #b48a5a;  
+    display: inline-block;
+}
+
+.container {
+    max-width: 950px;
+    margin: auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.filter-form label {
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+.filter-form input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #d1c3b7;
+    border-radius: 4px;
+}
+
+button,
+.btn {
+    padding: 9px 18px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    background: #8b5e34;         
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: 0.15s;
+}
+
+button:hover,
+.btn:hover {
+    background: #6f4a29;         
+}
+
+/* Tombol lain */
+.btn-back { background: #be0a0a; }
+.btn-back:hover { background: #ba0101; }
+
+.btn-print { background: #2c9005; }
+.btn-print:hover { background: #4e753f; }
+
+.btn-excel { background: #05a8aa; }
+.btn-excel:hover { background: #036c6e; }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    border: 1px solid #cdbfb5;   
+}
+
+thead {
+    background: #6b4f3f;   
+    color: #fff;
+}
+
+th, td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #dfd4ca;
+}
+
+tbody tr:hover {
+    background: #f0e8df;     
+}
+
+
+table, th, td {
+    border: 1px solid #c7b8a9;  
+}
+
+th, td {
+    padding: 10px 12px;
+}
+
+tbody tr:hover {
+    background: #f0e8df;
+}
